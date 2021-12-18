@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head><title>Family</title></head>
+<link rel="icon" type="image/dieana2.png" href="image/dieana2.png">
+<body>
+<header>
+<body bgcolor="#87AFC7">
+
+
+</header>
+<hr>
+<nav>
+<table cellspacing="5" cellpading="5">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="biodata.html">Biodata</a></td>
+<td><a href="experience.html">Experience</a></td>
+<td><a href="education.html">Education</a></td>
+<td><a href="family.html">Family</a></td>
+<td><a href="gallery.html">Gallery</a></td>
+</tr>
+</table>
+</nav>
+<hr>
+
+<center><p>Play this song while knowing about my family</p>
+</center>
+<title>Songs</title>
+<audio controls id="myaudio">
+<source src="songs/good days.mp3"/>
+</audio>
+<script>
+  var audio = document.getElementById("myaudio");
+  document.onkeydown = function(e) {
+    if (e.keyCode == 83) {
+      audio.pause(); // Press S
+    } else if (e.keyCode == 80) {
+      audio.play(); // Press P
+    }
+  };
+</script>
+</header>
+
+<br>
+<br>
+<center><h1><font face="Courier New">Get to Know my Family</h1>
+</font face>
+<center><img src="image/family.jpg" width="50%" height="50%">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h1><i><font color="#2B3856">This is my family!</i></h1>
+</font color>
+<font color="white">
+<p>Click the button below to see more</p>
+</font color>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Father')">Father</button>
+  <button class="tablinks" onclick="openCity(event, 'Mother')">Mother</button>
+  <button class="tablinks" onclick="openCity(event, 'Elder Brother')">Elder Brother</button>
+  <button class="tablinks" onclick="openCity(event, 'Younger Sister')">Younger Sister</button>
+</div>
+
+<div id="Father" class="tabcontent">
+  <h3>Man Irwan Bin Abdullah</h3>
+  <p>My father is very protective and is willing to give anything to us</p>
+<center><img src="image/papa 2.jpg" width="20%" height="20%" border="3" title="This was during his birthday in 2020">
+</div>
+
+<div id="Mother" class="tabcontent">
+  <h4>Sharifah Nor Azwa Binti Mohd Hassan</h4>
+  <p>My mother is very hardworking and loving towards everything she desires</p>
+<center><img src="image/mummy 3.jpg" width="20%" height="20%" border="3" title="Mummy during Raya 2017">
+</div>
+
+<div id="Elder Brother" class="tabcontent">
+  <h3>Daniel Shaffiq Bin Man Irwan</h3>
+  <p>My brother is someone that cares about me a lot and has been there for me since day one</p>
+<center><img src="image/abang.jpg" width="20%" height="20%" border="3" title="This is my brother">
+</div>
+
+<div id="Younger Sister" class="tabcontent">
+  <h3>Darine Shalin Binti Man Irwan</h3>
+  <p>My younger sister is very personable and have different opinions</p>
+<center><img src="image/bubu.jpg" width="20%" height="20%" border="3" title="My sister in Penang">
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</font face>
+
+<footer>
+Copyright &copy; Dieana Serene's Website 2021-2022
+</footer>
+</body>
+
+<style>
+#myaudio{
+  position: absolute;
+  width: 250px;
+  top: 10%;
+  left: 33%;
+  transform: translate(50%, 50%)
+}
+</style>
+
+</body>
